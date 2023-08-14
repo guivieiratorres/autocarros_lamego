@@ -457,7 +457,7 @@ def run():
 
         link_google_maps = 'http://www.google.com/maps/place/'+ str(paragem['lat'][id]) + ',' + str(paragem['long'][id])
         location = [paragem['geometry'][id].y, paragem['geometry'][id].x]
-        icon = folium.features.CustomIcon("static\images\icon_bus.png", icon_size=(20,20))
+        icon = folium.features.CustomIcon("static/images/icon_bus.png", icon_size=(20,20))
         popup = folium.Popup("<strong>Tempo de espera:</strong>" +
                               texto_completo +
                             "<br><br>Período escolar: <strong>"+ resposta +"</strong></a>"
